@@ -92,4 +92,7 @@
     .text-container {
       text-align: justify;
     }
+    .email-icon {
+      margin-left: 0.5rem;
+    }
   }
