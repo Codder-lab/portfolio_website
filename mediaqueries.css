@@ -96,3 +96,59 @@
       margin-left: 0.5rem;
     }
   }
+
+  /* mediaqueries.css */
+
+/* Bounce-in Effect for Section Titles on Mobile */
+@keyframes bounceInMobile {
+  0% {
+      opacity: 0;
+      transform: translateY(-50%);
+  }
+  60% {
+      opacity: 1;
+      transform: translateY(15%);
+  }
+  80% {
+      transform: translateY(-5%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.title {
+  animation: bounceInMobile 1s ease-in-out;
+}
+
+/* Slide-in Effect for About Me Text on Mobile */
+@keyframes slideInLeftMobile {
+  from {
+      opacity: 0;
+      transform: translateX(-50%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.about-details-container .text-container {
+  animation: slideInLeftMobile 1s ease-in-out;
+}
+
+/* Slide-in Effect for Contact Info on Mobile */
+@keyframes slideInUpMobile {
+  from {
+      opacity: 0;
+      transform: translateY(50%);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.contact-info-container {
+  animation: slideInUpMobile 1s ease-in-out;
+}
